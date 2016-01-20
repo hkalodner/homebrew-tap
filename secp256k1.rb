@@ -12,7 +12,8 @@ class Secp256k1 < Formula
     system "./configure", "--disable-debug",
                           "--disable-dependency-tracking",
                           "--disable-silent-rules",
-                          "--prefix=#{prefix}"
+                          "--prefix=#{prefix}",
+                          "--enable-module-recovery"
     system "make", "install"
   end
 end
